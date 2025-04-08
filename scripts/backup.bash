@@ -9,7 +9,7 @@ mkdir -p "$BACKUP_DIR"
 # List of files and directories to back up
 FILES_TO_BACKUP=(
   "$HOME/.bashrc"
-  "$HOME/.config"
+  "$HOME/.bash_profile"
 )
 
 # Backup files
