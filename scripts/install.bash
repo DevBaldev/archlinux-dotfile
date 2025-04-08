@@ -5,6 +5,7 @@ REPO_DIR="$(pwd)"
 
 # List of files and directories to install
 FILES_TO_INSTALL=(
+  "./.bashrc"
 )
 
 # Backup existing dotfiles and install new ones
