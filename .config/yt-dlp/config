@@ -1,0 +1,16 @@
+--no-mtime
+--embed-subs
+--write-subs
+--sub-langs en
+--lazy-playlist 
+--embed-metadata
+--embed-chapters
+--embed-info-json
+--downloader aria2c
+--audio-multistreams
+--video-multistreams
+--restrict-filenames
+-o "%(title)s.%(ext)s"
+-P "$HOME/Downloads"
+--sponsorblock-remove sponsor
+--format "bv*[height<=1080]+ba/b[height<=1080] / wv*+ba/w"
