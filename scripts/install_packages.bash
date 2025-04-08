@@ -51,13 +51,9 @@ done
 # Fish shell package installations using Fisher
 if type fish >/dev/null 2>&1; then
   echo "Fish shell found, proceeding with Fisher package installations."
-
-  if not type -q fisher; then
-    echo "Fisher not found, installing using yay."
-    yay -S fisher
-  fi
-
+  yay -S --needed fisher
   fish -c "
+    set -U fish_greeting
     fisher install edc/bass
     fisher install catppuccin/fish
     fish_config theme save 'Catppuccin Mocha'
