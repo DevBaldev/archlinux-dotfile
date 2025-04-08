@@ -25,4 +25,3 @@ for FILE in "${FILES_TO_BACKUP[@]}"; do
 done
 
 echo "Backup completed!"
-```
