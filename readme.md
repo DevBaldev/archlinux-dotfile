@@ -16,6 +16,16 @@ cd archlinux-dotfile
 ./scripts/backup.bash
 ```
 
+## Installation
+
+To install the dotfiles, clone the repository and run the install script:
+
+```sh
+git clone https://github.com/DevBaldev/archlinux-dotfile.git
+cd archlinux-dotfile
+./scripts/install.bash
+```
+
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
