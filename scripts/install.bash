@@ -3,14 +3,19 @@
 # Directory of the repository
 REPO_DIR="$(pwd)"
 
-# For Installing packages
+# Installing packages
 if [ -e "$REPO_DIR/scripts/install_packages.bash" ]; then
   bash $REPO_DIR/scripts/install_packages.bash
 fi
 
-# For Installing neovim
+# Installing neovim
 if [ -e "$REPO_DIR/scripts/install_neovim.bash" ]; then
   bash $REPO_DIR/scripts/install_neovim.bash
+fi
+
+# Installing hyprland
+if [ -e "$REPO_DIR/scripts/install_hyprland.bash" ]; then
+  bash $REPO_DIR/scripts/install_hyprland.bash
 fi
 
 # List of files and directories to install
