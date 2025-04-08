@@ -1,0 +1,34 @@
+[manager]
+ratio          = [ 0, 5, 3 ]
+sort_by        = "alphabetical"
+show_hidden    = false
+show_symlink   = true
+scrolloff      = 5
+
+[opener]
+imv = [
+    { run = 'imv "$@"', orphan = true, for = "unix" },
+]
+edit = [
+    { run = 'nvim "$@"', block = true, for = "unix" },
+]
+play = [
+    { run = 'mpv "$@"', orphan = true, for = "unix" },
+]
+wine = [
+    { run = 'wine "$@"', orphan = true, for = "unix" },
+]
+zathura = [
+    { run = 'zathura "$@"', orphan = true, for = "unix" },
+]
+
+[open]
+prepend_rules = [
+    { name = "*.png", use = "imv" },
+    { name = "*.jpg", use = "imv" },
+    { name = "*.exe", use = "wine" },
+    { name = "*.gif", use = "play" },
+    { name = "*.cbz", use = "zathura" },
+    { name = "*.pdf", use = "zathura" },
+    { name = "*.epub", use = "zathura" },
+]
