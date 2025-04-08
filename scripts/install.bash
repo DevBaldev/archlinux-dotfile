@@ -21,6 +21,7 @@ fi
 # List of files and directories to install
 FILES_TO_INSTALL=(
   ".bashrc"
+  ".profile"
   ".bash_profile"
   ".config"
 )
