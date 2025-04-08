@@ -8,6 +8,11 @@ if [ -e "$REPO_DIR/scripts/install_packages.bash" ]; then
   bash $REPO_DIR/scripts/install_packages.bash
 fi
 
+# For Installing neovim
+if [ -e "$REPO_DIR/scripts/install_neovim.bash" ]; then
+  bash $REPO_DIR/scripts/install_neovim.bash
+fi
+
 # List of files and directories to install
 FILES_TO_INSTALL=(
   ".bashrc"
