@@ -13,6 +13,55 @@ PACKAGE_TO_INSTALL=(
   "starship"
   "lsd"
   "zoxide"
+  # Audio
+  "pipewire"
+  "pipewire-alsa"
+  "pipewire-audio"
+  "pipewire-jack"
+  "pipewire-pulse"
+  "wireplumber"
+  "pavucontrol"
+  # Network
+  "networkmanager"
+  "nm-connection-editor"
+  "networkmanager-openvpn"
+  # Bluetooth
+  "bluez"
+  "bluez-utils"
+  # Zathura
+  "zathura"
+  "zathura-cb"
+  "zathura-pdf-mupdf"
+  # Screenshot
+  "slurp"
+  "grim"
+  "swappy"
+  # Theme
+  "kvantum"
+  "kvantum-qt5"
+  "nwg-look"
+  "capitaine-cursors"
+  "tela-circle-icon-theme-dracula"
+  # Yazi
+  "yazi"
+  "ffmpeg"
+  "p7zip"
+  "jq"
+  "poppler"
+  "fd"
+  "ripgrep"
+  "fzf"
+  "imagemagick"
+  "mpv"
+  # Media
+  "imv"
+  "mpv"
+  "yt-dlp"
+  # aur
+  "ani-cli"
+  "librewolf-bin"
+  "kvantum-theme-catppuccin-git"
+  "catppuccin-gtk-theme-mocha-revamped"
 )
 
 # Update the system
@@ -61,3 +110,7 @@ if type fish >/dev/null 2>&1; then
 else
   echo "Fish shell not found, skipping Fisher package installations."
 fi
+
+# Enable necessary services
+sudo systemctl enable NetworkManager.service
+sudo systemctl enable bluetooth.service
