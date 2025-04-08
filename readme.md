@@ -6,6 +6,16 @@ This repository contains my personal configuration files (dotfiles) for ArchLinu
 
 Feel free to customize these dotfiles to suit your needs. Backup your existing dotfiles before replacing them with these.
 
+## Backup
+
+A simple backup script is included to back up your configuration files. To use it, run:
+
+```sh
+git clone https://github.com/DevBaldev/archlinux-dotfile.git
+cd archlinux-dotfile
+./scripts/backup.bash
+```
+
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
