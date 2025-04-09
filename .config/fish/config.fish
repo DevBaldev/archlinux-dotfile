@@ -1,21 +1,25 @@
+# Source the profile
 bass source /etc/profile
 
-# A.U.R..
-abbr pc "yay -Yc"
-abbr pu "yay -Rncus"
-abbr pi "yay -S --needed"
+# A.U.R. abbreviations
+abbr --add pc "yay -Yc"
+abbr --add pu "yay -Rncus"
+abbr --add pi "yay -S --needed"
 
-# Lsd
-alias ls="lsd"
-alias ll="lsd -l"
-alias la="lsd -A"
-alias lla="lsd -lA"
+# Lsd aliases
+alias ls "lsd"
+alias ll "lsd -l"
+alias la "lsd -A"
+alias lla "lsd -lA"
 
-# Cli
-alias cd="z"
+# Cli alias
+alias cd "z"
 
-# Git actions.
-abbr gb "git add -A; git commit -am '$(date +%d/%m/%y\ %H:%m)'; git push"
+# Git actions abbreviation
+abbr --add gb "git add -A; and git commit -am (date +'%d/%m/%y %H:%M'); and git push"
 
+# Initialize zoxide
 zoxide init fish | source
+
+# Initialize starship
 starship init fish | source
