@@ -1,39 +1,57 @@
 # ArchLinux Dotfiles
 
-This repository contains my personal configuration files (dotfiles) for ArchLinux.
+This repository contains my personal dotfiles for Arch Linux, designed to create a minimal and efficient development environment.
 
-## Usage
+## What's Included
 
-Feel free to customize these dotfiles to suit your needs. Backup your existing dotfiles before replacing them with these.
+- Configurations for:
+  - **Shell**: [Fish-shell](https://github.com/fish-shell/fish-shell)
+  - **Text Editor**: [Neovim](https://github.com/neovim/neovim)
+  - **Window Manager**: [Hyprland](https://github.com/hyprwm/Hyprland)
+  - **Terminal Emulator**: [Kitty](https://github.com/kovidgoyal/kitty)
+  - **App Launcher**: [Wofi](https://hg.sr.ht/~scoopta/wofi)
+  - **Document Viewer**: [Zathura](https://github.com/pwmt/zathura)
+  - **Screenshot Tool**: [Swappy](https://github.com/jtheoof/swappy)
+  - **Terminal File Viewer**: [Yazi](https://github.com/sxyazi/yazi)
+  - **Other Tools**: Essential utilities and scripts
 
-## Backup
+## Setup Instructions
 
-A simple backup script is included to back up your configuration files. To use it, run:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/DevBaldev/archlinux-dotfile.git
+   cd archlinux-dotfile
+   ```
 
-```sh
-git clone https://github.com/DevBaldev/archlinux-dotfile.git
-cd archlinux-dotfile
-./scripts/backup.bash
-```
+2. **Backup your existing dotfiles**:
+   Use the provided script to back up your current dotfiles:
+   ```bash
+   ./scripts/backup.bash
+   ```
 
-## Installation
+3. **Install the dotfiles**:
+   Run the installation script to symlink the dotfiles to your home directory:
+   ```bash
+   ./scripts/install.bash
+   ```
 
-To install the dotfiles, clone the repository and run the install script:
+4. **Reload your environment**:
+   Restart your shell or reload configurations:
+   ```bash
+   exec fish
+   ```
 
-```sh
-git clone https://github.com/DevBaldev/archlinux-dotfile.git
-cd archlinux-dotfile
-./scripts/install.bash
-```
+## Customization
 
-## Contributing
+Feel free to edit any file in this repository to match your specific preferences. Contributions are welcome! If you have ideas to enhance these configurations, feel free to submit a pull request.
 
-Contributions are welcome! Please open an issue or submit a pull request.
+## Feedback & Support
 
-## Contact
-
-For any questions or feedback, please contact [DevBaldev](https://github.com/DevBaldev).
+If you encounter any issues or have suggestions for improvement, please [open an issue](https://github.com/DevBaldev/archlinux-dotfile/issues).
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This repository is licensed under the [MIT License](LICENSE).
+
+---
+*Enjoy a streamlined and productive Arch Linux experience!*
